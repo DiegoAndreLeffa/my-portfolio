@@ -9,7 +9,7 @@ import {
   FaNode,
   FaReact,
 } from "react-icons/fa";
-import { DiDjango } from "react-icons/Di";
+import { DiDjango } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 export const stackData = [
   {

@@ -4,19 +4,16 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 import {
   ContactSection,
-  ContactSectionContent,
   ContactSectionText,
   ContactsCards,
-  ContactCard,
-  ContactCardImage,
-  ContactCardContent,
+  ContactSectionContent1,
 } from "./style";
 
 import { FaWhatsapp, FaEnvelopeOpen, FaLinkedin } from "react-icons/fa";
 import { useRef } from "react";
 import { userData } from "@/utils/userData";
 
-export const Contacts = () => {
+export const About = () => {
   const ref = useRef(null);
 
   const linkedInUrl = `https://www.linkedin.com/in/${userData.linkedinUser}`;
@@ -25,22 +22,45 @@ export const Contacts = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.1, 0.9]);
 
   return (
-    <ContactSection id="contact">
+    <ContactSection id="about">
       <Container>
-        <ContactSectionContent ref={ref}>
+        <ContactSectionContent1 ref={ref}>
           <motion.div style={{ scale }}>
             <ContactSectionText>
-              <Text type="heading2" color="grey4">
-                Vamos conversar e{" "}
-                <Text as="span" type="heading2" color="brand1">
-                  desenvolver soluções para sua empresa
+              <Text type="heading1" color="grey4">
+                Sobre{" "}
+                <Text as="span" type="heading1" color="brand1">
+                  mim
                 </Text>
-                , junto!
               </Text>
             </ContactSectionText>
           </motion.div>
           <ContactsCards>
-            <ContactCard>
+            <Text type="heading5" color="grey4">
+              Olá! Meu nome é{" "}
+              <Text as="span" type="heading5" color="brand1">
+                {userData.nameUser}
+              </Text>{" "}
+              e sou um desenvolvedor Full Stack. Sou apaixonado por programação
+              e tenho trabalhado duro para me aprimorar e crescer como
+              profissional. Durante minha jornada, tive a oportunidade de
+              trabalhar em projetos desafiadores, o que me permitiu expandir
+              minhas habilidades em JavaScript, TypeScript e Python. Acredito na
+              importância de manter-me atualizado com as tendências e
+              tecnologias emergentes do setor, e estou sempre em busca de
+              oportunidades para aprender e me desenvolver.
+              <p>
+                <br></br>
+              </p>
+              Sou uma pessoa criativa e curiosa, sempre explorando novas ideias
+              e buscando soluções inovadoras. Estou entusiasmado em compartilhar
+              meu portfólio com você e espero que você aprecie meu trabalho. Se
+              você tiver alguma pergunta ou quiser saber mais sobre minhas
+              experiências, fique à vontade para entrar em contato. Obrigado por
+              visitar o meu portfólio!"
+            </Text>
+
+            {/* <ContactCard>
               <ContactCardImage className="wpp">
                 <FaWhatsapp color="#fff" size={24} />
               </ContactCardImage>
@@ -112,9 +132,9 @@ export const Contacts = () => {
                   Acesse o LinkedIn agora
                 </Text>
               </ContactCardContent>
-            </ContactCard>
+            </ContactCard> */}
           </ContactsCards>
-        </ContactSectionContent>
+        </ContactSectionContent1>
       </Container>
     </ContactSection>
   );

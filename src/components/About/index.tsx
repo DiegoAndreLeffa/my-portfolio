@@ -36,7 +36,7 @@ export const About = () => {
             </ContactSectionText>
           </motion.div>
           <ContactsCards>
-            <Text type="body1" color="grey2">
+            <Text type="body1" color="grey3">
               Olá! Meu nome é{" "}
               <Text as="span" type="heading5" color="brand1">
                 {userData.nameUser}

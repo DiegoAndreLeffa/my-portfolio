@@ -26,8 +26,8 @@ export const stackData = [
     img: FaReact,
   },
   { title: "Git", img: FaGit },
+  { title: "Express.js", img: SiExpress },
   { title: "PostgreSQL", img: SiPostgresql },
   { title: "Python", img: FaPython },
   { title: "Django", img: DiDjango },
-  { title: "Express.js", img: SiExpress },
 ];

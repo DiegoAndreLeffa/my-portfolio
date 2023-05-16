@@ -41,23 +41,27 @@ export const About = () => {
               <Text as="span" type="heading5" color="brand1">
                 {userData.nameUser}
               </Text>{" "}
-              e sou um desenvolvedor Full Stack. Sou apaixonado por programação
-              e tenho trabalhado duro para me aprimorar e crescer como
+              ,sou desenvolvedor Full Stack, apaixonado por programação, tenho
+              trabalhado com afinco para me aprimorar e crescer como
               profissional. Durante minha jornada, tive a oportunidade de
-              trabalhar em projetos desafiadores, o que me permitiu expandir
-              minhas habilidades em JavaScript, TypeScript e Python. Acredito na
-              importância de manter-me atualizado com as tendências e
-              tecnologias emergentes do setor, e estou sempre em busca de
-              oportunidades para aprender e me desenvolver.
+              trabalhar em projetos desafiadores, que me permitiram expandir
+              minhas habilidades em JavaScript, TypeScript, Python e outras.
+              Acredito na importância de manter-me atualizado com as tendências
+              e tecnologias emergentes do setor, estou sempre em busca de
+              oportunidades de novas experiencias de aprendendizagem e
+              desenvolvimento.
               <p>
                 <br></br>
               </p>
-              Sou uma pessoa criativa e curiosa, sempre explorando novas ideias
-              e buscando soluções inovadoras. Estou entusiasmado em compartilhar
-              meu portfólio com você e espero que você aprecie meu trabalho. Se
-              você tiver alguma pergunta ou quiser saber mais sobre minhas
-              experiências, fique à vontade para entrar em contato. Obrigado por
-              visitar o meu portfólio!"
+              Me considero uma pessoa criativa e curiosa, sempre explorando
+              novas ideias e buscando soluções inovadoras. Estou entusiasmado em
+              compartilhar meu portfólio com você, espero que aprecie o
+              trabalho. Se tiver alguma pergunta ou quiser saber mais sobre
+              minhas experiências, fique à vontade para entrar em contato.
+              <p>
+                <br></br>
+              </p>
+              Obrigado por visitar o meu portfólio!
             </Text>
 
             {/* <ContactCard>

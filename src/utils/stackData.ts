@@ -1,8 +1,10 @@
-import { SiPostgresql, SiTypescript } from "react-icons/si";
-import { FaGit, FaPython } from "react-icons/fa";
-import { FaHtml5, FaCss3Alt, FaJs, FaNode, FaReact } from "react-icons/fa";
-import { DiDjango } from "react-icons/di";
-import { SiExpress } from "react-icons/si";
+import { SiPostgresql, SiSpringboot, SiTypescript, SiExpress } from "react-icons/si";
+
+import { FaHtml5, FaCss3Alt, FaJs, FaNode, FaReact, FaGit, FaPython } from "react-icons/fa";
+import { DiDjango, DiJava } from "react-icons/di";
+
+
+
 export const stackData = [
   {
     title: "HTML",
@@ -30,4 +32,6 @@ export const stackData = [
   { title: "PostgreSQL", img: SiPostgresql },
   { title: "Python", img: FaPython },
   { title: "Django", img: DiDjango },
+  { title: "Java", img: DiJava},
+  {title: "Spring-boot", img: SiSpringboot}
 ];

@@ -41,7 +41,7 @@ export const About = () => {
               <Text as="span" type="heading5" color="brand1">
                 {userData.nameUser}
               </Text>{" "}
-              ,sou desenvolvedor Full Stack, apaixonado por programação, tenho
+              , sou desenvolvedor Full Stack, apaixonado por programação, tenho
               trabalhado com afinco para me aprimorar e crescer como
               profissional. Durante minha jornada, tive a oportunidade de
               trabalhar em projetos desafiadores, que me permitiram expandir

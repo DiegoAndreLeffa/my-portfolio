@@ -8,37 +8,78 @@ import {
 } from "./style";
 
 import { Text } from "@/styles/Text";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
-import { userData } from "@/utils/userData";
 
-interface ReposType {
-  id: number;
-  name: string;
-  language: string;
-  description: string;
-  html_url: string;
-  homepage: string;
-}
+const mockRepositories = [
+  {
+    id: 1,
+    name: "StayInn-O-Futuro-do-Gerenciamento (Frontend)",
+    language: "typescript",
+    description: "Projeto de um sistema de gerenciamento de hotel - Frontend",
+    html_url: "https://github.com/StayInn-O-Futuro-do-Gerenciamento/front-end",
+    homepage: "",
+  },
+  {
+    id: 2,
+    name: "StayInn-O-Futuro-do-Gerenciamento (Backend)",
+    language: "typescript",
+    description: "Projeto de um sistema de gerenciamento de hotel - Backend",
+    html_url: "https://github.com/StayInn-O-Futuro-do-Gerenciamento/back-end/tree/develop",
+    homepage: "",
+  },
+  {
+    id: 3,
+    name: "ICarSell (Frontend)",
+    language: "typescript",
+    description: "Projeto de um site de venda de carros - Frontend",
+    html_url: "https://github.com/ICarSell/ICarSell-frontEnd",
+    homepage: "",
+  },
+  {
+    id: 4,
+    name: "ICarSell (Backend)",
+    language: "typescript",
+    description: "Projeto de um site de venda de carros - Backend",
+    html_url: "https://github.com/ICarSell/ICarSell-backEnd",
+    homepage: "",
+  },
+  {
+    id: 5,
+    name: "EpicLoot (Frontend)",
+    language: "typescript",
+    description: "Projeto de um site de venda de jogos online - Frontend",
+    html_url: "https://github.com/DiegoAndreLeffa/epicloot-frontend",
+    homepage: "",
+  },
+  {
+    id: 6,
+    name: "EpicLoot (Backend)",
+    language: "typescript",
+    description: "Projeto de um site de venda de jogos online - Backend",
+    html_url: "https://github.com/DiegoAndreLeffa/epicloot-backend",
+    homepage: "",
+  },
+  {
+    id: 7,
+    name: "Clone Spotfy (Frontend)",
+    language: "typescript",
+    description: "Projeto de um clone do Spotify - Frontend",
+    html_url: "https://github.com/DiegoAndreLeffa/Clone-Spotfy-Front",
+    homepage: "",
+  },
+  {
+    id: 8,
+    name: "Clone Spotfy (Backend)",
+    language: "typescript",
+    description: "Projeto de um clone do Spotify - Backend",
+    html_url: "https://github.com/DiegoAndreLeffa/Clone-Spotfy-Back",
+    homepage: "",
+  },
+];
 
 export const Project = (): JSX.Element => {
-  const [repositories, setRepositories] = useState<ReposType[]>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetch(
-        `https://api.github.com/users/${userData.githubUser}/repos?sort=created&direction=desc`
-      );
-
-      const json = await data.json();
-
-      setRepositories(json);
-
-      return json;
-    };
-
-    fetchData();
-  }, []);
+  const [repositories, setRepositories] = useState<any[]>(mockRepositories);
 
   return (
     <>

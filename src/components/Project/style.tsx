@@ -43,6 +43,7 @@ export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
   marginTop: "4rem",
+  position: "relative",
   [`&:first-child`]: {
     [`& ${ProjectTitle}:first-child`]: {
       position: "relative",
@@ -53,4 +54,18 @@ export const Project = styled("article", {
       },
     },
   },
+});
+
+export const NewTag = styled("span", {
+  position: "absolute",
+  top: "10px",
+  right: "10rem",
+  backgroundColor: "$brand1",
+  color: "$whiteFixed",
+  padding: "0.2rem 0.8rem",
+  borderRadius: "$1",
+  fontSize: "$text2",
+  fontWeight: "600",
+  textTransform: "uppercase",
+  letterSpacing: "1px",
 });

@@ -144,3 +144,14 @@ export const ProjectAreaWrapperColumns = styled("div", {
     flexDirection: "column",
   },
 });
+
+export const ProjectsAreaFilters = styled("div", {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "$3",
+  marginTop: "$5",
+
+  [`& ${Button}`]: {
+    textTransform: "capitalize",
+  },
+});

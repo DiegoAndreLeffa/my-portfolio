@@ -1,5 +1,5 @@
 import { createTheme, globalCss, styled } from "@stitches/react";
-import { ReactNode } from "react";
+import { JSX, ReactNode } from "react";
 
 interface GlobalStyleProps {
   children: ReactNode;

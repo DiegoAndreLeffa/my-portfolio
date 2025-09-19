@@ -9,7 +9,7 @@ import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 import { FaGithub } from "react-icons/fa";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, JSX } from "react";
 
 import {
   Header,
@@ -162,7 +162,12 @@ export const Home = (): JSX.Element => {
             </HeaderButtonsArea>
             <StackCards>
               {stackData.map((stack, index) => (
-                <Stack key={index} title={stack.title} icon={stack.img} />
+                <Stack
+                  key={index}
+                  id={index}
+                  title={stack.title}
+                  icon={stack.img}
+                />
               ))}
             </StackCards>
           </HeaderContent>

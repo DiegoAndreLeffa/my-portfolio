@@ -9,6 +9,7 @@ import {
 } from "./style";
 
 import { Text } from "@/styles/Text";
+import { JSX } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
 
 interface IRepository {

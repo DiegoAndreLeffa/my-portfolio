@@ -1,4 +1,4 @@
-import { SiPostgresql, SiSpringboot, SiTypescript, SiExpress } from "react-icons/si";
+import { SiPostgresql, SiTypescript, SiExpress } from "react-icons/si";
 
 import { FaHtml5, FaCss3Alt, FaJs, FaNode, FaReact, FaGit, FaPython } from "react-icons/fa";
 import { DiDjango } from "react-icons/di";

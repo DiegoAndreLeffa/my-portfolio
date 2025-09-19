@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { JSX, useState } from "react";
 import useMedia from "use-media";
 import { userData } from "@/utils/userData";
 

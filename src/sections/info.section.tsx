@@ -27,6 +27,11 @@ export const InfoSection = () => {
 				className='sec'
 				href='/#tech-stack'
 			/>
+			<FloatingButton
+				label='Projetos'
+				className='sec sec-below'
+				href='/#projects'
+			/>
 
 			<div className='blur'></div>
 			<div className='bottom-bar'>

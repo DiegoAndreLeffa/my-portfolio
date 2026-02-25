@@ -81,3 +81,7 @@
 .floating-btn.sec > span {
 	background-color: var(--accentHi);
 }
+
+.sec-below {
+	transform: translateY(70px);
+}

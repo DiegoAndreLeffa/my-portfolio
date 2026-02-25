@@ -2,6 +2,7 @@ import { MouseTrail } from './components/mouse-trail';
 import { ScrollBar } from './components/scroll-bar';
 import { AboutMe } from './sections/about-me.section';
 import { InfoSection } from './sections/info.section';
+import { ProjectsSection } from './sections/projects.section';
 import { TechStack } from './sections/tech-stack.section';
 import './styles/about-me.css';
 import './styles/floating-button.css';
@@ -20,6 +21,7 @@ function App() {
 			<InfoSection />
 			<AboutMe />
 			<TechStack />
+			<ProjectsSection />
 		</>
 	);
 }

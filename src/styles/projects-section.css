@@ -1,0 +1,145 @@
+.projects-section {
+	padding: 4rem 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+/* wrapper geral */
+.carousel-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 820px;
+	margin: 0 auto;
+}
+
+/* área visível */
+.carousel-viewport {
+	overflow: hidden;
+	width: 100%;
+	perspective: 1200px;
+}
+
+/* faixa que se move */
+.carousel-track {
+	display: flex;
+	transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transform-style: preserve-3d;
+}
+
+/* cada slide */
+.carousel-slide {
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+/* CARD */
+.project-card {
+	width: 100%;
+	max-width: 760px;
+
+	font-family: 'Open Sans', sans-serif;
+
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 18px;
+	padding: 1.8rem;
+
+	backdrop-filter: blur(6px);
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+/* header */
+.project-header h3 {
+	font-size: 1.3rem;
+	font-family: 'Fugaz One', sans-serif;
+}
+
+.project-header span {
+	font-size: 0.85rem;
+	opacity: 0.7;
+}
+
+/* descrição curta */
+.project-description {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	max-width: 60ch;
+	opacity: 0.85;
+}
+
+/* stack */
+.project-techs {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+}
+
+.project-tech-group-title {
+	font-size: 0.75rem;
+	opacity: 0.6;
+	text-transform: capitalize;
+}
+
+.project-tech-row {
+	display: flex;
+	gap: 0.4rem;
+	flex-wrap: wrap;
+}
+
+.project-tech-row .glow-box {
+	padding: 0.3rem 0.5rem;
+	font-size: 0.7rem;
+}
+
+/* links */
+.project-links {
+	margin-top: 0.6rem;
+	display: flex;
+	gap: 0.6rem;
+
+	a {
+		color: white;
+	}
+}
+
+/* botões */
+.carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	color: white;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.carousel-btn.left {
+	left: -50px;
+}
+
+.carousel-btn.right {
+	right: -50px;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+	.carousel-wrapper {
+		max-width: 100%;
+	}
+
+	.carousel-btn.left {
+		left: 8px;
+	}
+
+	.carousel-btn.right {
+		right: 8px;
+	}
+}

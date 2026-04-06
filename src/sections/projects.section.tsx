@@ -54,6 +54,7 @@ const projects = [
 			frontend: 'https://github.com/Orbis-Life-Simulator/orbis-frontend',
 			backend: 'https://github.com/Orbis-Life-Simulator/orbis-backend',
 		},
+		link: '',
 	},
 
 	{
@@ -83,6 +84,7 @@ const projects = [
 			frontend: 'https://github.com/CodeQuiz-PMI/front',
 			backend: 'https://github.com/CodeQuiz-PMI/back-no-sql',
 		},
+		link: '',
 	},
 
 	{
@@ -113,6 +115,7 @@ const projects = [
 			frontend: 'https://github.com/DiegoAndreLeffa/gametermo-front',
 			backend: 'https://github.com/DiegoAndreLeffa/gametermo-api',
 		},
+		link: 'https://gametermo-front.vercel.app/',
 	},
 ];
 
@@ -234,6 +237,15 @@ export const ProjectsSection = () => {
 									<header className='project-header'>
 										<h3>{project.title}</h3>
 										<span>{project.subtitle}</span>
+										{project.link && (
+											<a
+												href={project.link}
+												target='_blank'
+												rel='noreferrer'
+											>
+												Acessar
+											</a>
+										)}
 									</header>
 
 									<p className='project-description'>{project.description}</p>

@@ -237,16 +237,17 @@ export const ProjectsSection = () => {
 									<header className='project-header'>
 										<h3>{project.title}</h3>
 										<span>{project.subtitle}</span>
-										{project.link && (
-											<a
-												href={project.link}
-												target='_blank'
-												rel='noreferrer'
-											>
-												Acessar
-											</a>
-										)}
 									</header>
+									{project.link && (
+										<a
+											href={project.link}
+											target='_blank'
+											rel='noreferrer'
+											style={{ color: 'white' }}
+										>
+											Acessar
+										</a>
+									)}
 
 									<p className='project-description'>{project.description}</p>
 

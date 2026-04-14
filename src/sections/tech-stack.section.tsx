@@ -9,6 +9,7 @@ import {
 	SiPython,
 	SiStyledcomponents,
 } from 'react-icons/si';
+import { TbBrandCSharp } from 'react-icons/tb';
 
 import { GlowBox } from '../components/glow-box';
 import { SectionTitle2 } from '../components/section-title.component 2';
@@ -46,6 +47,11 @@ const techs = [
 				title: 'Express JS',
 				icon: <SiExpress color='rgba(255, 255, 255)' />,
 				color: 'rgba(255, 255, 255, 0.4)',
+			},
+			{
+				title: 'C#',
+				icon: <TbBrandCSharp color='rgba(29, 157, 187)' />,
+				color: 'rgba(29,157,187, 0.6)',
 			},
 		],
 	},

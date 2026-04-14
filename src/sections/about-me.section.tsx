@@ -7,7 +7,7 @@ const timeline = [
 			{
 				title: 'Desenvolvedor Full Stack',
 				place: 'Projetos Acadêmicos e Pessoais',
-				timePeriod: '2022 - Atual',
+				timePeriod: '2021 - Atual',
 				description: (
 					<ul>
 						<li>
@@ -74,21 +74,32 @@ export const AboutMe = () => {
 				subTitle='MIM'
 			/>
 			<div>
-				<div className='intro'>
+				<div
+					className='intro'
+					style={{ textAlign: 'justify' }}
+				>
 					<p style={{ marginTop: '20px' }}>
-						👋 Olá, eu sou Diego, Desenvolvedor Full Stack.
+						Olá, eu sou <strong>Diego</strong>, Desenvolvedor Full Stack com
+						atuação voltada principalmente para backend.
 					</p>
+
 					<p>
-						Atuo no desenvolvimento de aplicações web e mobile, com foco em
-						<strong> JavaScript/TypeScript</strong>, <strong>React</strong> e{' '}
-						<strong>Node.js</strong>, sempre buscando soluções eficientes e bem
+						Atuo no desenvolvimento de aplicações web completas, desde a
+						construção de interfaces até a criação de APIs e regras de negócio.
+					</p>
+
+					<p>
+						Participo da implementação de funcionalidades de ponta a ponta,
+						incluindo desenvolvimento de APIs REST, autenticação, modelagem de
+						dados, integração entre sistemas e organização de arquitetura de
+						código, sempre buscando soluções eficientes, escaláveis e bem
 						estruturadas.
 					</p>
+
 					<p>
-						Gosto de resolver problemas, aprender novas tecnologias e
-						transformar ideias em projetos funcionais. Atualmente, estou focado
-						em evoluir tecnicamente e consolidar minha carreira como
-						desenvolvedor.
+						Tenho como objetivo evoluir tecnicamente e consolidar minha carreira
+						como desenvolvedor, contribuindo na construção de sistemas robustos
+						e aplicáveis no mundo real.
 					</p>
 				</div>
 				<div>

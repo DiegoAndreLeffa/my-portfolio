@@ -47,12 +47,6 @@ export const InfoSection = () => {
 					icon={<FaLinkedinIn color='rgb(0, 160, 220)' />}
 					aria-label='linkedin'
 				/>
-				<GlowLink
-					href='mailto:diegoleffa@hotmail.com'
-					icon={<IoMailOutline color='rgb(18, 122, 209)' />}
-					color=' rgb(18, 122, 209,0.7)'
-					aria-label='mail'
-				/>
 			</div>
 		</div>
 	);

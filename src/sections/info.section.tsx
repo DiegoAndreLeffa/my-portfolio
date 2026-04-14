@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { IoMailOutline } from 'react-icons/io5';
 
 import { FloatingButton } from '../components/floating-button';
 import { GlowLink } from '../components/glow-box-link';
